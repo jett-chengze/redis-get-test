@@ -1,0 +1,6 @@
+mode: dev
+
+redis:
+  host: 10.150.210.99
+  port: 6379
+  db: 0

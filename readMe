@@ -1,0 +1,6 @@
+# run
+docker run --name=redis-get-test -p 8081:8081 redis-get-test
+
+# use
+go get -u github.com/redis/go-redis/v9
+go get github.com/spf13/viper
