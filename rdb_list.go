@@ -13,5 +13,5 @@ func rdb_list(rdb *redis.Client, ctx context.Context) {
 	if err != nil {
 		log.Fatalf("redis lrange error: %s", err)
 	}
-	log.Printf("redis lrange list1: %v", resList1)
+	log.Printf("redis lrange list1: %v", resList1) //[value1 value2 ...]
 }

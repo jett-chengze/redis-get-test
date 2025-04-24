@@ -16,20 +16,24 @@ func main() {
 	defer rdb.Close()
 
 	//string
-	rdb_string(rdb, ctx)
+	//rdb_string(rdb, ctx)
+	rdb_string_ByLua(rdb, ctx)
 
 	//hash
-	rdb_hash(rdb, ctx)
+	//rdb_hash(rdb, ctx)
+	rdb_hash_ByLua(rdb, ctx)
 
 	//list
-	rdb_list(rdb, ctx)
+	//rdb_list(rdb, ctx)
+	rdb_list_ByLua(rdb, ctx)
 
 	//set
-	rdb_set(rdb, ctx)
+	//rdb_set(rdb, ctx)
+	rdb_set_ByLua(rdb, ctx)
 
 	//sorted set
-	rdb_sorted_set(rdb, ctx)
-
+	//rdb_sorted_set(rdb, ctx)
+	rdb_sorted_set_ByLua(rdb, ctx)
 }
 
 func NewRedisClient(host string, port int, db int) (*redis.Client, context.Context) {
